@@ -1,4 +1,19 @@
 SmallBiz::Application.routes.draw do
+ 
+  root :to => 'pages#home'
+
+
+
+  get "pages/home"
+
+  get "pages/about"
+
+  get "pages/services"
+
+  get "pages/portfolio"
+
+  get "pages/fees"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
