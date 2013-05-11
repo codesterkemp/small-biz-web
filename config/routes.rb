@@ -1,18 +1,20 @@
 SmallBiz::Application.routes.draw do
  
+  resources :contacts
+
+
   root :to => 'pages#home'
 
+  match "/about", to: "pages#about"
 
+  match "/services", to: "pages#services"
 
-  get "pages/home"
+  match "/portfolio", to: "pages#portfolio"
 
-  get "pages/about"
+  match "/fees", to: "pages#fees"
 
-  get "pages/services"
-
-  get "pages/portfolio"
-
-  get "pages/fees"
+  match "/contact", to: "contacts#new"
+ 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
