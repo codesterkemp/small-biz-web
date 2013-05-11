@@ -5,6 +5,8 @@ SmallBiz::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  get "/home",    to: "pages#home"
+
   match "/about", to: "pages#about"
 
   match "/services", to: "pages#services"
